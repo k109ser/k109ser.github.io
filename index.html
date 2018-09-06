@@ -1,55 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="mail.css">
-    <title>Dr. Norman Borlaug</title>
+   
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <div id="main" class="container">
-        <header>
-                <h1 id="title"  class="header__title__first">Dr. Norman Borlaug</h1>
-                <h2 class="header__title__second">The man who saved a billion lives</h2>
-        </header>
-        <main>
-            <div id="img-div" class="image-container">
-                <h2 class="visually-hidden">Picture with Dr. Norman Borlaug and other people.</h2>
-                <img id="image" src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg" alt="pic Dr. Norman Borlaug">
-                <p id="img-caption" class="about-picture">Dr. Norman Borlaug, second from left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</p>
+    <h1 id="title" class="title">Survey Form</h1>
+    <div class="container">
+        <p id="description" class="subtitle">Let us know how we can improve freeCodeCamp</p>
+        <form id="survey-form" action="https://google.com" method="POST">
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label id="name-label" for="name">* Name:</label>
+                </div>
+                <div class="right-column right-column--middle">
+                    <input id="name" autofocus class="input-field" type="text" id="name" required placeholder="Enter your name">
+                </div>
             </div>
-            <section id="tribute-info" class="time__line">
-                <h2 class="here">Here's a time line of Dr. Borlaug's life:</h2>
-                <ul>
-                    <li><time datetime="1914">1914</time> - Born in Cresco, Iowa</li>
-                    <li><time datetime="1933">1933</time> - Leaves his family's farm to attend the University of Minnesota, thanks to a Depression era program known as the "National Youth Administration"</li>
-                    <li><time datetime="1935">1935</time> - Has to stop school and save up more money. Works in the Civilian Conservation Corps, helping starving Americans. "I saw how food changed them", he said. "All of this left scars on me."</li>
-                    <li><time datetime="1937">1937</time> - Finishes university and takes a job in the US Forestry Service</li>
-                    <li><time datetime="1938">1938</time> - Marries wife of 69 years Margret Gibson. Gets laid off due to budget cuts. Inspired by Elvin Charles Stakman, he returns to school study under Stakman, who teaches him about breeding pest-resistent plants.</li>
-                    <li><time datetime="1941">1941</time> - Tries to enroll in the military after the Pearl Harbor attack, but is rejected. Instead, the military asked his lab to work on waterproof glue, DDT to control malaria, disenfectants, and other applied science.</li>
-                    <li><time datetime="1942">1942</time> - Receives a Ph.D. in Genetics and Plant Pathology</li>
-                    <li><time datetime="1944">1944</time> - Rejects a 100% salary increase from Dupont, leaves behind his pregnant wife, and flies to Mexico to head a new plant pathology program. Over the next 16 years, his team breeds 6,000 different strains of disease resistent wheat - including different varieties for each major climate on Earth.</li>
-                    <li><time datetime="1945">1945</time> - Discovers a way to grown wheat twice each season, doubling wheat yields</li>
-                    <li><time datetime="1953">1953</time> - crosses a short, sturdy dwarf breed of wheat with a high-yeidling American breed, creating a strain that responds well to fertalizer. It goes on to provide 95% of Mexico's wheat.</li>
-                    <li><time datetime="1962">1962</time> - Visits Delhi and brings his high-yielding strains of wheat to the Indian subcontinent in time to help mitigate mass starvation due to a rapidly expanding population</li>
-                    <li><time datetime="1970">1970</time> - receives the Nobel Peace Prize</li>
-                    <li><time datetime="1983">1983</time> - helps seven African countries dramatically increase their maize and sorghum yields</li>
-                    <li><time datetime="1984">1984</time> - becomes a distinguished professor at Texas A&M University</li>
-                    <li><time datetime="2005">2005</time> - states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</li>
-                    <li><time datetime="2009">2009</time> - dies at the age of 95.</li>
-                </ul>
-            </section>
-                <blockquote class="end">
-                    <p>"Borlaug's life and achievement are testimony to the far-reaching contribution that one man's towering intellect, persistence and scientific vision can make to human peace and progress."</p>
-                    <div class="end__span">-- Indian Prime Minister Manmohan Singh</div>
-                </blockquote>
-            
-        </main>
-        <footer>
-            <p class="footer__main">If you have time, you should read more about this incredible human being on his <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Norman_Borlaug">Wikipedia entry</a>.</p>
-        </footer>
+
+            <div class="row">
+                <div class="left-column  left-column--center">
+                    <label id="email-label" for="email">* Email:</label>
+                </div>
+                <div class="right-column right-column--middle">
+                    <input  id="email" class="input-field" type="email" id="email" required placeholder="Enter your Email">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label id="number-label" for="age">* Age:</label>
+                </div>
+                <div class="right-column right-column--middle">
+                    <input id="number" class="input-field" type="number" id="age" min="0" max="150" required placeholder="Age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label for="role">Which option best describes your current role?</label>
+                </div>
+                <div class="right-column">
+                    <select id="dropdown" class="select" name="current-role" id="role">
+                        <option value="student" selected>Student</option>
+                        <option value="fulltimejob">Full time job</option>
+                        <option value="fulltimelearner">Full time learner</option>
+                        <option value="prefernottosay">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label for="userRecommed">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+                </div>
+                <div class="right-column">
+                    <ul class="right-column__radio" >
+                        <li>
+                            <input type="radio" id="recommend1" name="recommend" value="definitely" required>
+                            <label for="recommend1">Definitely</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="recommend2" name="recommend" value="maybe">
+                            <label for="recommend2">Maybe</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="recommend3" name="recommend" value="not_sure">
+                            <label for="recommend3">Not sure</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label for="like">What do you like most in FCC:</label>
+                </div>
+                <div class="right-column">
+                    <select class="select" name="mostlike" id="like">
+                        <option disabled selected value="select_an_option">Select an option</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="opensource">Open Source</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label for="improve">Things that should be improved in the future (Check all that apply):</label>
+                </div>
+                <div class="right-column">
+                    <ul id="improve">
+                        <li><label for=""><input value="test" type="checkbox">Front-end Project</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Back-end Project</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Data Visualization</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Challenges</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Open source Community</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Gitter help rooms</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Videos</label></li>
+                        <li><label for=""><input value="test" type="checkbox">City Meetups</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Wiki</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Forum</label></li>
+                        <li><label for=""><input value="test" type="checkbox">Additional Courses</label></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left-column left-column--center">
+                    <label for="comments">Any Comments or Suggestions?</label>
+                </div>
+                <div class="right-column">
+                    <textarea class="input-field--hight" name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </div>
+
+            <button id="submit" type="submit">Submit</button>
+        </form>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
