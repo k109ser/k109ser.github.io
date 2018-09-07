@@ -5,126 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h1 id="title" class="title">Survey Form</h1>
-    <div class="container">
-        <p id="description" class="subtitle">Let us know how we can improve freeCodeCamp</p>
-        <form id="survey-form" action="https://google.com" method="POST">
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label id="name-label" for="name">* Name:</label>
-                </div>
-                <div class="right-column right-column--middle">
-                    <input id="name" autofocus class="input-field" type="text" id="name" required placeholder="Enter your name">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="left-column  left-column--center">
-                    <label id="email-label" for="email">* Email:</label>
-                </div>
-                <div class="right-column right-column--middle">
-                    <input  id="email" class="input-field" type="email" id="email" required placeholder="Enter your Email">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label id="number-label" for="age">* Age:</label>
-                </div>
-                <div class="right-column right-column--middle">
-                    <input id="number" class="input-field" type="number" id="age" min="0" max="150" required placeholder="Age">
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label for="role">Which option best describes your current role?</label>
-                </div>
-                <div class="right-column">
-                    <select id="dropdown" class="select" name="current-role" id="role">
-                        <option value="student" selected>Student</option>
-                        <option value="fulltimejob">Full time job</option>
-                        <option value="fulltimelearner">Full time learner</option>
-                        <option value="prefernottosay">Prefer not to say</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label for="userRecommed">* How likely is that you would recommend freeCodeCamp to a friend?</label>
-                </div>
-                <div class="right-column">
-                    <ul class="right-column__radio" >
-                        <li>
-                            <input type="radio" id="recommend1" name="recommend" value="definitely" required>
-                            <label for="recommend1">Definitely</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="recommend2" name="recommend" value="maybe">
-                            <label for="recommend2">Maybe</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="recommend3" name="recommend" value="not_sure">
-                            <label for="recommend3">Not sure</label>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label for="like">What do you like most in FCC:</label>
-                </div>
-                <div class="right-column">
-                    <select class="select" name="mostlike" id="like">
-                        <option disabled selected value="select_an_option">Select an option</option>
-                        <option value="challenges">Challenges</option>
-                        <option value="projects">Projects</option>
-                        <option value="community">Community</option>
-                        <option value="opensource">Open Source</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label for="improve">Things that should be improved in the future (Check all that apply):</label>
-                </div>
-                <div class="right-column">
-                    <ul id="improve">
-                        <li><label for=""><input value="test" type="checkbox">Front-end Project</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Back-end Project</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Data Visualization</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Challenges</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Open source Community</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Gitter help rooms</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Videos</label></li>
-                        <li><label for=""><input value="test" type="checkbox">City Meetups</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Wiki</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Forum</label></li>
-                        <li><label for=""><input value="test" type="checkbox">Additional Courses</label></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="left-column left-column--center">
-                    <label for="comments">Any Comments or Suggestions?</label>
-                </div>
-                <div class="right-column">
-                    <textarea class="input-field--hight" name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
-                </div>
-            </div>
-
-            <button id="submit" type="submit">Submit</button>
-        </form>
+    <div class="header-container">
+        <header id="header" class="header">
+            <div class="header-logo"><img id="header-img" src="img/original_trombones.png" alt="Original trombones"></div>
+            <nav id="nav-bar" class="main-navigation">
+                <ul class="nav-items">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
     </div>
+    </header>
+    </div>
+
+    <div class="container">
+
+    </div>
+    <main class="main">
+        <h1 class="title">Handcrafted, home-made masterpieces</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+            <input class="input-test" name="email" id="email" type="email" placeholder="Enter your email address" required>
+            <input id="submit" type="submit" value="GET STARTED" formaction="https://www.freecodecamp.com/email-submit">
+        </form>
+        <section id="features" class="features">
+            <h2 class="visually-hidden">Features</h2>
+            <ul class="features-list">
+                <li class="feature">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire"> </i>
+                    </div>
+                    <div class="disc">
+                        <h3>Premium Materials</h3>
+                        <p>Our trombones use the shiniest brass which is
+                            longevity
+                            of your purchase.</p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-truck"></i>
+                    </div>
+                    <div class="disc">
+                        <h3>Fast Shipping</h3>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also
+                            provide
+                            free returns if you are not satisfied.</p>
+                    </div>
+                </li>
+                <li class="feature">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                    </div>
+                    <div class="disc">
+                        <h3>Quality Assurance</h3>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check
+                            and
+                            test the pitch of your instrument.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="how-it-works"class="video">
+            <h2 class="visually-hidden">Video exemple</h2>
+            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                frameborder="0" allowfullscreen=""></iframe>
+        </section>
+        <section id="pricing" class="pricing">
+            <h2 class="visually-hidden">Our offers</h2>
+            <ul class="offers-items">
+                <li class="offer-item">
+                    <div class="name">
+                        <h3>TENOR TROMBONE</h3>
+                    </div>
+                    <span>$600</span>
+                    <p class="disc-offer">Lorem, ipsum. <br>
+                        Dolor sit amet. <br>
+                        Consectetur adipisicing elit. <br>
+                        Voluptatem!</p>
+                    <button>SELECT</button>
+                </li>
+                <li class="offer-item">
+                    <div class="name">
+                        <h3>BASS TROMBONE</h3>
+                    </div>
+                    <span>$900</span>
+                    <p class="disc-offer">Lorem, ipsum. <br>
+                        Dolor sit amet. <br>
+                        Consectetur adipisicing elit. <br>
+                        Voluptatem!</p>
+                    <button>SELECT</button>
+                </li>
+                <li class="offer-item">
+                    <div class="name">
+                        <h3>VALVE TROMBONE</h3>
+                    </div>
+                    <span>$1200</span>
+                    <p class="disc-offer">Lorem, ipsum. <br>
+                        Dolor sit amet. <br>
+                        Consectetur adipisicing elit. <br>
+                        Voluptatem!</p>
+                    <button class="select" type="submit">SELECT</button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer main">
+        <nav class="footer-nav">
+            <ul class="footer-nav__items">
+                <li class="footer-nav__item"><a href="#">Privacy</a></li>
+                <li class="footer-nav__item"><a href="#">Terms</a></li>
+                <li class="footer-nav__item"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="copyright">Copyright 2016, Orininal Trombones</p>
+    </footer>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
